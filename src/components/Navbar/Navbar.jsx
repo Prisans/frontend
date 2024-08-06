@@ -48,12 +48,11 @@ const Navbar = ({ setShowLogin }) => {
       </ul>
 
       <div className="navbar-right">
-        <SuprSendInbox 
-          className='suprsend'
+        <SuprSendInbox
+          className="suprsend"
           workspaceKey={import.meta.env.VITE_WORKSPACE_KEY}
-subscriberId={import.meta.env.VITE_SUBSCRIBER_ID}
-distinctId={import.meta.env.VITE_DISTINCT_ID}
-
+          subscriberId={import.meta.env.VITE_SUBSCRIBER_ID}
+          distinctId={import.meta.env.VITE_DISTINCT_ID}
         />
         <img src={assets.search_icon} alt="" />
         <div className="navbar-search-icon">
